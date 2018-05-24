@@ -1,0 +1,541 @@
+.background{
+  background-image: url("../img/alliances_img/Alliances-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.text-caption{
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  right: 10%;
+  bottom:24vh;
+  color: white;
+}
+
+/*-----------------animation-----------*/
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform:     translateY(-30px);
+    transform:         translateY(-30px)
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform:     translateY(-15px);
+    transform:         translateY(-15px)
+  }
+}
+
+
+#button{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#button:hover{
+animation-name: bounce;
+  -moz-animation-name: bounce;);
+}
+
+
+
+
+.calendar-mobile{
+  background-image: url("../img/alliances_img/Alliances-20.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.navbar-dark{
+  background-color: rgba(0,0,0,0.3) !important;
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+}
+
+
+
+.navdown{ 
+ 
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-right: 0;
+  
+ }
+
+.active-link{
+  background-color: #10A399 !important;
+}
+
+
+.nav-link{
+  margin-right: 40px !important;
+}
+
+.nav-link-down{
+  color: #6D6D6D !important; 
+  font-size: 105%;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  text-decoration: none !important;
+
+}
+
+
+/*-------------SIDEBAR----------------*/
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 1;
+}
+
+/* The navigation menu links */
+.sidebar a {
+    font-family: "Quicksand" , sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: 0.3s;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-right: 25px;
+}
+
+
+
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.footer ul { 
+  list-style: none outside none; 
+  margin:0; 
+  margin-bottom: 2.5%!important;
+  padding-right: 1px; 
+  text-align: center;
+  overflow: hidden;
+   }
+    
+.footer li a{
+ text-decoration: none;
+   margin: 0 3.8%;
+   float: left;
+   color: #595959 !important;
+}
+
+       
+.social:hover{
+  opacity: 0.6;
+}
+
+
+
+
+/*--------------------------
+SCREEN ADJUSTMENT-----------*/
+
+@media only screen and (max-width: 480px) {
+.story_heading{
+  font-size: 365% !important;
+}
+
+.caption{
+  margin-top: 45% !important;
+}
+
+.heading{
+  font-size: 300% !important;
+}
+
+.caption p{
+  font-size: 150% !important;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .spi{
+    display: none;
+  }
+.calendar-home{
+  display: none;
+}
+
+  .calendar-mobile{
+    display: block;
+  }
+
+.our_story .col-12{
+  text-align: center !important;
+}
+
+
+.spi-footer img{
+width: 150px !important;
+margin-top: 6% !important;
+}
+
+
+ .footer ul{
+    padding : 0!important;
+  }
+
+    .footer li a{
+      float: none;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+}
+
+.footer li{
+margin-bottom: 2% !important; 
+}
+  
+
+.content_to_hide{
+  display: none;
+}
+
+ .btn {
+  width: 80% !important;
+}
+
+.text-center{
+  font-size: 350% !important
+}
+
+
+
+   .social_mobile{
+    display: block;
+   }
+
+   .social_desktop{
+    display: none;
+   }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width:768px) and (min-width:600px) {
+
+  .spi{
+    display: none;
+  }
+  .content_to_hide{
+  display: none;
+}
+
+
+
+.calendar-home{
+  display: none;
+}
+
+.calendar-mobile{
+  display: block;
+}
+
+.caption{
+  margin-top: 25%!important;
+}
+
+
+.spi-footer img{
+width: 150px !important;
+margin-top: 6% !important;
+}
+
+
+
+    .footer ul{
+    padding : 0!important;
+  }
+
+    .footer li a{
+      float: none;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+}
+
+.footer li{
+margin-bottom: 2% !important; 
+}
+
+
+   .social_mobile{
+    display: block;
+   }
+
+   .social_desktop{
+    display: none;
+   }
+} 
+
+
+@media (max-width:850px) and (min-width:769px) {
+
+.calendar-mobile{
+  display: none;
+}
+
+.calendar-home{
+  display: block;
+}
+
+
+.navbar-nav{
+  font-size: 91%;
+  margin-left: 0% !important;
+}
+
+.register-here{
+  font-size: 100%;
+}
+
+
+.nav-link{
+  padding-right: 0px !important;
+  margin-right: 20px !important;
+}
+
+
+
+   .footer li a{
+  margin-right: 0% !important;
+  font-size: 90% !important;
+}
+
+  .social_mobile{
+    display: none;
+   }
+
+   .social_desktop{
+    display: block;
+   }
+
+    .text-caption h1{
+    font-size: 400% !important;
+   }
+
+   .text-caption p{
+    font-size: 160% !important;
+   }
+ 
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width:992px) and (min-width:850px) {
+  
+.navbar-nav{
+  font-size: 100%;
+  margin-left: 2% !important;
+}
+
+.register-here{
+  font-size: 85%;
+}
+
+  .nav-link{
+  padding-right: 0px !important;
+  margin-right: 30px !important;
+}
+
+
+.calendar-mobile{
+  display: none;
+}
+.calendar-home{
+  display: block;
+}
+
+  .footer li a{
+  margin-right: 0% !important;
+  font-size: 90% !important;
+}
+
+  .social_mobile{
+    display: none;
+   }
+
+   .social_desktop{
+    display: block;
+   }
+
+   .text-caption h1{
+    font-size: 430% !important;
+   }
+
+   .text-caption p{
+    font-size: 180% !important;
+   }
+ 
+
+} 
+
+@media (max-width:1200px) and (min-width:993px){
+
+
+.calendar-mobile{
+  display: none;
+}
+.calendar-home{
+  display: block;
+}
+
+
+.navbar-nav{
+  font-size: 100%;
+  margin-left: 30% !important;
+}
+
+.register-here{
+  font-size: 100%;
+}
+
+.nav-link{
+  padding-right: 5px !important;
+  margin-right: 20px !important;
+}
+
+    .footer li a{
+  margin-right: 2.2% !important;
+ 
+}
+
+ .social_mobile{
+    display: none;
+   }
+
+   .social_desktop{
+    display: block;
+   }
+
+ }
+ 
+@media (max-width:1300px) and (min-width:1200px){
+.nav-link{
+    margin-right: 20px !important;
+    padding-right: 5px !important;
+  }
+
+   .calendar-mobile{
+    display: none;
+   }
+   .calendar-home{
+    display: block;
+   }
+
+    .social_mobile{
+    display: none;
+   }
+
+   .social_desktop{
+    display: block;
+   }
+}
+
+
+
+@media only screen and (min-width: 1300px) {
+   .calendar-mobile{
+    display: none;
+   }
+   .calendar-home{
+    display: block;
+   }
+
+   .social_mobile{
+    display: none;
+   }
+
+   .social_desktop{
+    display: block;
+   }
+  
+}
+}
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
