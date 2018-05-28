@@ -1,3 +1,9 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .background {
   background-image: url("../img/about_img/ABOUT-02.jpg");
   background-size: cover;
@@ -439,9 +445,7 @@ SCREEN ADJUSTMENT-----------*/
 
 /*-----------------ABOUT US ADDITION---------------------*/
 
-body {
-  font-family: 'Quicksand', sans-serif;
-}
+
 
 h1 {
   color: white;

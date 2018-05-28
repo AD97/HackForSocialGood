@@ -1,5 +1,10 @@
 /*-------------------HACKATHON PATH-------------------------------------*/
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .carousel-indicators {
   bottom: 30%;
   left: 75%;

@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .background{
   background-image: url("../img/calendar_img/Calendar-01.jpg");
   background-size: cover;
