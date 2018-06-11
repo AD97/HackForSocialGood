@@ -46,18 +46,31 @@
       <div class="collapse navbar-collapse" id="navbarCollapse" style="width: 100%;">
         <ul class="navbar-nav" style="margin-left: 55%;">
           <li class="nav-item">
-            <a class="nav-link active " href="index.html">HOME
+            <a class="nav-link active " href="index.html" style="color: white;">HOME
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">ABOUT</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          ABOUT
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+          <a class="dropdown-item" href="alliances.html">ALLIANCES</a>
+          </div>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          HACKATHON
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a>
+          <a class="dropdown-item" href="challenges.html">CHALLENGES</a>
+          </div>
+          </li>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hackathon.html">HACKATHON</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="calendar.html">CALENDAR</a>
+            <a class="nav-link " href="calendar.html" style="color: white;">CALENDAR</a>
           </li>
 
         </ul>
@@ -184,12 +197,12 @@
 
 
 
-    <div style="background-color: white; position: relative; padding: 5% 5% 5% 5%;">
+    <div class="container-fluid marketing" style="background-color: #EAEAEA; position: relative; padding: 5% 5% 0 5%;">
       <div class="row">
         <div class="col-sm-8">
-          <h1 style="text-align: center;  font-family: 'Quicksand', sans-serif; color:#636363; margin-bottom: 2px; padding-top: 8%">We solve for the global goals to make an impact in this world and change it for the better.</h1>
+          <h2 style="text-align: center;  font-family:'Quicksand', sans-serif; color:#636363; margin-bottom: 0px; padding-top: 12%; padding-left: 8%; text-align:left; font-size: 28px;"></style>We solve for the global goals to make an</h2><h2 style="font-family:'Quicksand', sans-serif;padding-left: 8%;font-size: 28px;color:#636363;"> impact in this world and change it for the</h2><h2 style="font-family:'Quicksand', sans-serif;padding-left: 8%;font-size: 28px;color:#636363;padding-top: 0%;"> better.</h2>
           <a class="home-link" href="challenges.html">
-            <h5 style="text-align: center; font-family: 'Quicksand', sans-serif; color:#393939;">Check out a few of the challenges. </h5>
+            <h5 style="text-align: left;font-size: 18px; font-family: 'Quicksand', sans-serif; color:#393939;padding-top: 3%; padding-left: 8%;">Check out a few of the challenges. </h5>
           </a>
         </div>
         <div class="col-sm-4" style="text-align: center; margin-top: 8%; padding-bottom: 7%;">
@@ -197,14 +210,14 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid marketing" style="background-color: #EAEAEA; position: relative; padding: 5% 5% 0 5%;">
+    <div style="background-color: white; position: relative; padding: 5% 5% 5% 5%;">
+    
       <div class="row">
         <div class="col-sm-8">
-          <h1 style="text-align: center; margin-top: 12%; font-family: 'Quicksand', sans-serif; color:#636363; margin-bottom: 2px;">We are a platform that brings the community together to acknowledge, analyze and address Global challenges at the
-            local level.</h1>
+          <h2 style="text-align: left; margin-top: 12%;font-size: 28px; font-family: 'Quicksand', sans-serif; color:#636363; padding-left: 8%">We are a platform that brings the community </h2><h2 style="font-family:'Quicksand', sans-serif;padding-left: 8%;font-size: 28px;color:#636363;"> together to acknowledge, analyze and address </h2><h2 style="font-family:'Quicksand', sans-serif;padding-left: 8%;padding-bottom:3%; font-size: 28px;color:#636363;"> Global challenges at the
+            local level.</h2>
           <a class="home-link" href="about-us.html">
-            <h5 style="text-align: center; font-family: 'Quicksand', sans-serif; color:#393939;">Learn more about what we do.</h5>
+            <h5 style="text-align: left;font-size: 18px; font-family: 'Quicksand', sans-serif; color:#393939; padding-bottom: 15%;padding-left: 8%">Learn more about what we do.</h5>
           </a>
         </div>
         <div class="col-sm-4" style="text-align: center; margin-top: 8%;">
@@ -215,32 +228,74 @@
   </div>
 
 
-  <div class="home" style="background-color: white;">
+  <div class="container-fluid marketing" style="background-color: #EAEAEA; position: /*relative; padding: 5% 5% 0 5%;*/ ">
     <!-- TESTIMONIAL STARTS -->
-    <div class="container" style="margin-top: 8%;">
-      <div style="background-color: white;">
-        <img src="img/home_img/Quotes-18.png" width="200">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000" style="width: 1000px; margin: 0 auto">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/home_img/testimonials-01.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/home_img/testimonials-02.jpg" alt="Second slide">
-            </div>
+   <div id="demo" class="carousel slide" data-ride="carousel">
 
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  </ol>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/testimonials-07.png " width="600" alt="First slide "  style="margin-left: 50px;">
+        <div style="position:relative;left:290px;bottom: 110px; ">Neelam Palrecha <br>&nbsp&nbsp&nbsp&nbspPeriFerry, CEO</div>
+        <div class="carousel-caption">
+          <style type="text/css">
+            .carousel-control-prev-icon, .carousel-control-next-icon
+             {
+                    height: 50px;
+                    width: 50px;
+                    outline:dark green;
+                    background-color: #00CCCC;
+                    background-size: 45%, 45%;
+                    border-radius: 100%;
+                    border: 5px green;
+            }
+            .carousel-caption{
+              bottom: 250px;
+              left:650px;
+              color:black;
+              font-size: 15px;
+              text-align: justify;
+            }
+            .carousel-indicators li 
+            {
+                border-radius: 12px;
+                width: 12px;
+                height: 12px;
+                background-color: #404040;
+            }
+          </style>
+    <h5 style="font-family:'Quicksand', sans-serif;font-size: 22px;">The interaction with the jury and our initial pitch was quite interesting for us, because for months together we had an idea and they gave us a lot of different directions to what we could be doing and what the different avenues that we could explore with our social adventure.</h5>
+     
+  </div>
+  
+
+  </div>
+
+    <div class="carousel-item">
+      <img src="img/testimonials-06.png " width="600" alt="Second slide " style="margin-left: 50px;">
+      <div style="position:relative;left:300px;bottom: 70px; ">&nbspMathew Jose<br>Paperman, CEO</div>
+      <div class="carousel-caption">
+      <h5 style="font-family:'Quicksand', sans-serif;font-size: 22px;">Hack for Social Good acts as the stepping stone to something great. There are two things technology and social change, and this hackathon gives the perfect opportunity to start working on it. </h5>
       </div>
     </div>
+    
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 
   </div>
 
@@ -267,19 +322,48 @@
   </div>
 
   <!-- TESTIMONIAL ENDS -->
-  <div class="main-page">
-    <div style="background-color: white; ">
-      <h1 style="text-align: center;  font-family: 'Quicksand', sans-serif; color:#636363; margin-bottom: 2px; padding-top: 12%;">Individuals all over the world are working for
-        <br> sustainability and doing their best for society.</h1>
-      <h5 style="text-align: center; font-family: 'Quicksand', sans-serif; color:#393939;">Do you want to share your story?</h5>
-      <div class="container-fluid tss" style="text-align: center;  padding-bottom: 2%;">
-        <img src="img/home_img/TSS Final-13.png" width="400">
+ 
+
+  <div class="container" style="margin-top: 50px;">
+  
+  <div class="card-deck">
+    <div class="card bg-light text-dark col-sm-6">
+      <div class="card-body text-center">
+        <p style="margin-top: 30px"></p>
+         <img src="img/Stories-29.png" width="90">
+        <p class="card-text" style="margin-bottom: 65px; margin-top: 75px;">Individuals all over the world are working for sustainability and doing the bext for society </p>
+        <a href="#">
+                <img src="img/Arrow-30.png" width="45">
+        </a>
       </div>
     </div>
+    
+    <div class="card bg-light text-dark col-sm-6">
+      <div class="card-body text-center">
+         <p style="margin-top: 30px"></p>
+         <img src="img/Hackathon-29.png" width="90">
+        <p style="margin-bottom: 65px; margin-top: 75px;">The Hackathon is our initiative to leverage emerging techand address Global Goals</p>
+        <a href="hackathon.html">
+                <img src="img/Arrow-30.png" width="45">
+        </a>
+      </div>
+    </div>
+    <div class="card bg-light text-dark col-sm-6">
+      <div class="card-body text-center">
+        <p style="margin-top: 30px"></p>
+         <img src="img/Events-29.png" width="90">
+        <p class="card-text" style="margin-bottom: 65px; margin-top: 75px;">We conduct events,workshops and masterclasses to actively engage the community.</p>
+        <a href="calendar.html">
+                <img src="img/Arrow-30.png" width="45">
+        </a>
+      </div>
+    </div>
+    </div>  
   </div>
+</div>
 
   <!-- Footer -->
-  <div class="footer container" style=" padding-top: 2%;">
+  <xdiv class="footer container" style=" padding-top: 2%;">
     <div class="row align-items-center">
 
       <div class="social_desktop col-sm-6" style="text-align: center; margin-top: 3%;">
