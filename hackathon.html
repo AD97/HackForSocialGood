@@ -50,11 +50,24 @@
               <span class="sr-only ">(current)</span>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="about-us.html ">ABOUT</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          ABOUT
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+          <a class="dropdown-item" href="alliances.html">ALLIANCES</a>
+          </div>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active " href="hackathon.html ">HACKATHON</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          HACKATHON
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a>
+          <a class="dropdown-item" href="challenges.html">CHALLENGES</a>
+          </div>
+          </li>
           </li>
           <li class="nav-item ">
             <a class="nav-link " href="calendar.html ">CALENDAR</a>
@@ -164,32 +177,7 @@
 
   </div>
 
-  <div id="main ">
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class=" container-fluid ">
-        <div class="row " style="width: 103%; ">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 navdown " style="text-align: right; ">
-            <a class=" nav-link-down " href="hackathon.html ">
-
-              <div class="btn btn-md active-link " style="color: white; width: 50%;font-family: 'Oswald', sans-serif; font-weight:
-  200; ">HOW IT WORKS</div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 navdown " style="text-align: left; ">
-            <a class=" nav-link-down " href="challenges.html ">
-
-              <div class="btn btn-md " style=" width: 50%; border: 1px solid #10a399;font-family: 'Oswald', sans-serif; font-weight:
-  200; ">CHALLENGES</div>
-            </a>
-          </div>
-
-
-        </div>
-
-      </div>
-    </nav>
-  </div>
-
+  
   <hr style="margin-bottom: 0; ">
 
   <div class="hackathon-path calendar-home ">
@@ -214,13 +202,13 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 20px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  transition: 0.5s ease;
+  
 }
 
 /* Position the "next button" to the right */
@@ -232,7 +220,10 @@ img {vertical-align: middle;}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #00CCCC;
+  border-radius: 200%;
+
 }
+
 
 /* Caption text */
 .text {
@@ -252,6 +243,7 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  background-color: #00CCCC;
 }
 
 /* The dots/bullets/indicators */
@@ -340,8 +332,8 @@ img {vertical-align: middle;}
   <div class="text">Caption Three</div>
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev img-circle" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next img-circle" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
