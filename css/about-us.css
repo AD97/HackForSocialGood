@@ -76,21 +76,23 @@ p {
   height: 100vh;
 }
 
-.navdown {
-  padding-top: 10px;
-  padding-bottom: 3px;
-  padding-right: 0px;
-}
-
 .navbar-dark {
   background-color: rgba(0, 0, 0, 0.3) !important;
-  position: absolute;
+  position: fixed;
   z-index: 100000;
   width: 100%;
 }
 
+
+
 .nav-link {
-  margin-right: 40px !important;
+  padding-right: 47px !important;
+}
+
+.navdown {
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-right: 0px;
 }
 
 .nav-link-down {
@@ -99,6 +101,11 @@ p {
   cursor: pointer;
   text-decoration: none !important;
 }
+
+.active-link {
+  background-color: #10A399 !important;
+}
+
 
 /*-------------SIDEBAR----------------*/
 

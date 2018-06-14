@@ -83,9 +83,13 @@ p {
 
 .navbar-dark {
   background-color: rgba(0, 0, 0, 0.3) !important;
-  position: absolute;
+  position: fixed;
   z-index: 100000;
   width: 100%;
+}
+
+.nav-link {
+  padding-right: 47px !important;
 }
 
 .navdown {
@@ -94,20 +98,15 @@ p {
   padding-right: 0px;
 }
 
-.active-link {
-  background-color: #10A399 !important;
-}
-
-.nav-link {
-  margin-right: 40px !important;
-}
-
 .nav-link-down {
   color: #6D6D6D !important;
-  font-size: 105%;
   font-family: 'Oswald', sans-serif;
   cursor: pointer;
   text-decoration: none !important;
+}
+
+.active-link {
+  background-color: #10A399 !important;
 }
 
 /*-------------SIDEBAR----------------*/
