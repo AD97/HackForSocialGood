@@ -49,11 +49,23 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="about-us.html">ABOUT</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              ABOUT
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+              <a class="dropdown-item" href="alliances.html">ALLIANCES</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="hackathon.html">HACKATHON</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              HACKATHON
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a>
+              <a class="dropdown-item" href="challenges.html">CHALLENGES</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="calendar.html">CALENDAR</a>
@@ -74,7 +86,7 @@
 
     <div class="caption" style="position: absolute; width: 100%; margin-top: 33%; text-align: center; padding: 0 18px 0 18px;">
       <h1 style="font-size: 380% ; font-family: 'Oswald', sans-serif; font-weight: 700;" class="heading">ABOUT</h1>
-      <p style="font-size: 190%; font-weight: 300; color: white;">We bring the community together to identify, analyze, validate and solve 'Glocal' problems by encouraging social entrepreneurship.</p>
+      <p style="font-size: 190%; font-weight: 300; color: white;">We bring the community together to identify, analyze, validate and solve 'Global' problems by encouraging social entrepreneurship.</p>
       <br>
     </div>
 
@@ -139,15 +151,18 @@
         <div class="text-caption">
           <h1 style="font-size: 450%; font-family: 'Oswald', sans-serif; font-weight: 700;" class="heading">ABOUT</h1>
           <br>
-          <p style="font-size: 210%; font-weight: 300; line-height: 35px;">We bring the community together to identify, analyze,
-            <br> validate and solve 'Glocal' problems by encouraging
-            <br> social entrepreneurship.</p>
-          <br>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <p style="font-size: 210%; position:center;font-weight: 300; line-height: 35px;">We bring the community together to identify, analyze, validate and solve 'Global' problems by encouraging
+                  social entrepreneurship.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="button">
-          <img src="img/Arrow.png" width="180">
-        </div>
+
 
       </div>
 
@@ -159,29 +174,7 @@
 
 
 
-  <div id="main">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class=" container-fluid">
-        <div class="row" style="width: 103%;">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 navdown" style="text-align: right;">
-            <a class=" nav-link-down" href="about-us.html">
 
-              <div class="btn btn-md active-link" style=" color: white; width: 50%;">ABOUT</div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-6 navdown" style="text-align: left;">
-            <a class=" nav-link-down" href="Alliances.html">
-
-              <div class="btn btn-md" style="width: 50%; border: 1px solid #10a399;">ALLIANCES</div>
-            </a>
-          </div>
-
-
-        </div>
-
-      </div>
-    </nav>
-  </div>
 
   <!-- Our Mission start -->
   <div class="bg">
@@ -189,11 +182,13 @@
       <div>
         <h1 class="text-center" style="padding-left: 10px; padding-right: 10px; padding-top: 50px; padding-bottom: 50px; color: #10a399; text-transform: uppercase; font-size: 60px; font-family: 'Oswald', sans-serif;font-weight: 300; font-size: 500%;">Build a sustainable world</h1>
         <div class="row">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4">
+          <div>
+            <p style="position:center; font-size:24px;">An investment isn't an investment if it destroys our planet. Hack for Social Good is a platform to accelerate
+              sustainable development. The global goals define who we are and who we want to be. We bring the community together
+              to identify, analyze validate and solve Global problems by encouraging social entrepreneurship. We believe
+              great ideas with great technology can lead the world to a sustainable and resilient path. </p>
             <hr style="display: block; height: 1px; border: 0;border-top: 3px solid black;margin: 1em 0;padding: 0;">
           </div>
-          <div class="col-lg-4"></div>
         </div>
       </div>
 
@@ -314,25 +309,23 @@
   <!-- Our Story start -->
   <div class="our_story" style="background-image: url(img/about_img/story-02.jpg);">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-3 col-sm-2 col-0"></div>
-        <div class="col-lg-4 col-md-3 col-sm-2 col-0"></div>
-        <div class="col-lg-4 col-md-6 col-sm-8 col-12" style="text-align: right;">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-8 col-12">
           <div class="story_heading" style="margin-top: 20%;">
             OUR STORY
           </div>
-
-          <div id="story_content">
-            <h1>Technology has fueled the exponential growth of industries. Agents of Social change have rarely harnessed this
-              power. We realised the path to sustainable growth lied at the intersection of tech and social good.</h1>
-            <br>
-            <h1> Hack for Social Good is our initiative to leverage emerging tech and solve for Global Goals. To piece together
-              an ecosystem for problem seekers and solution providers.</h1>
-          </div>
         </div>
-
+        <div class="row justify-content-center" id="story_content">
+            <p>Technology has fueled the exponential growth of industries. Agents of Social change have rarely harnessed this
+              power. We realised the path to sustainable growth lied at the intersection of tech and social good.</p>
+            <br>
+            <p> Hack for Social Good is our initiative to leverage emerging tech and solve for Global Goals. To piece together
+              an ecosystem for problem seekers and solution providers.</p>
+        </div>
       </div>
+
     </div>
+  </div>
   </div>
   <!-- Our story ends -->
 
