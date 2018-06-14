@@ -29,13 +29,12 @@ html, body {
 .navbar-dark {
   background-color: rgba(0, 0, 0, 0.3) !important;
   position: fixed;
-  min-height:11%;
   z-index: 100000;
   width: 100%;
 }
-.nav-item {
+/* .nav-item {
   font-size:23px;
-}
+} */
 .nav-link {
   padding-right: 47px !important;
 }
