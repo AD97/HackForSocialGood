@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../../../favicon.ico">
+  <link rel="icon" href="img/Hackathon Logo_FINAL-10.png">
 
   <title>HackForSocialGood</title>
 
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
     crossorigin="anonymous">
 
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
@@ -28,11 +29,84 @@
     crossorigin="anonymous"></script>
 
 
+
   <!-- Custom styles for this template -->
   <link href="css/home.css" rel="stylesheet">
 </head>
 
 <body style=" font-family: 'Quicksand', sans-serif;">
+  <style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0; } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
   <header class="content_to_hide">
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
@@ -43,35 +117,32 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse" style="width: 100%;">
-        <ul class="navbar-nav" style="margin-left: 55%;">
-          <li class="nav-item">
-            <a class="nav-link active " href="index.html" style="color: white;">HOME
-              <span class="sr-only">(current)</span>
+       <div class="collapse navbar-collapse " id="navbarCollapse " style="width: 100%; ">
+        <ul class="navbar-nav " style="margin-left: 50%; ">
+          <li class="nav-item ">
+            <a class="nav-link " href="index.html ">HOME
+              <span class="sr-only ">(current)</span>
             </a>
           </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
-          ABOUT
-          </a>
           <style>
           .dropdown-menu
           {
-             background: rgba(0, 0, 0, 0.4);
+             background: rgba(0, 0, 0, 0.3);
                 box-shadow: 0px 8px 16px 0px;
-
           }
           .dropdown-item
           {
             color:white;
-          }
 
+          }
           </style>
-          <div class="dropdown-menu" >
-          <ul>
-          <li><a class="dropdown-item" href="about-us.html" >ABOUT US</a></li>
-          <li><a class="dropdown-item" href="alliances.html" >ALLIANCES</a></li>
-        </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          ABOUT
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+          <a class="dropdown-item" href="alliances.html">ALLIANCES</a>
           </div>
           </li>
           <li class="nav-item dropdown">
@@ -79,18 +150,18 @@
           HACKATHON
           </a>
           <div class="dropdown-menu">
-          <ul>
-          <li><a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a></li>
-          <li><a class="dropdown-item" href="challenges.html">CHALLENGES</a></li>
+          <a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a>
+          <a class="dropdown-item" href="challenges.html">CHALLENGES</a>
           </div>
           </li>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="calendar.html" style="color: white;">CALENDAR</a>
+          <li class="nav-item ">
+            <a class="nav-link " href="calendar.html ">CALENDAR</a>
           </li>
 
         </ul>
       </div>
+
       <div class="spi">
         <a href="https://www.spicinemas.in/">
           <img src="img/SPI Cinemas_logo-02.png" width="120">
@@ -383,16 +454,16 @@
     <div class="row align-items-center">
 
       <div class="social_desktop col-sm-6" style="text-align: center; margin-top: 3%;">
-        <a href="https://www.facebook.com/h4sg16/" class="social">
+        <a href="https://www.facebook.com/h4sg16/" class="social" target="_blank">
           <img src="img/FACEBOOK-01.png" width="30">
         </a>
-        <a href="https://www.instagram.com/hackforsocialgood/" class="social">
+        <a href="https://www.instagram.com/hackforsocialgood/" class="social" target="_blank">
           <img src="img/INSTAGRAM-01.png" width="30">
         </a>
-        <a href="https://twitter.com/hack4socialgood" class="social">
+        <a href="https://twitter.com/hack4socialgood" class="social" target="_blank">
           <img src="img/TWITTER-01.png" width="30">
         </a>
-        <a href="https://www.youtube.com/channel/UCAXmCYGrHeqFcx7p4cgx4Ug" class="social">
+        <a href="https://www.youtube.com/channel/UCAXmCYGrHeqFcx7p4cgx4Ug" class="social" target="_blank">
           <img src="img/YOUTUBE-01.png" width="30">
         </a>
       </div>

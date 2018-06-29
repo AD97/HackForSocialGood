@@ -39,34 +39,52 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse" style="width: 100%;">
-        <ul class="navbar-nav" style="margin-left: 45%;">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">HOME
-              <span class="sr-only">(current)</span>
+     <div class="collapse navbar-collapse " id="navbarCollapse " style="width: 100%; ">
+        <ul class="navbar-nav " style="margin-left: 45%; ">
+          <li class="nav-item ">
+            <a class="nav-link " href="index.html ">HOME
+              <span class="sr-only ">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">ABOUT</a>
+          <style>
+          .dropdown-menu
+          {
+             background: rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 8px 16px 0px;
+          }
+          .dropdown-item
+          {
+            color:white;
+
+          }
+          </style>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          ABOUT
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+          <a class="dropdown-item" href="alliances.html">ALLIANCES</a>
+          </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="hackathon.html">HACKATHON</a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          HACKATHON
+          </a>
+          <div class="dropdown-menu">
+          <a class="dropdown-item" href="hackathon.html">HOW IT WORKS</a>
+          <a class="dropdown-item" href="challenges.html">CHALLENGES</a>
+          </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="calendar.html">CALENDAR</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="calendar.html ">CALENDAR</a>
           </li>
 
         </ul>
       </div>
 
 
-      <div class="spi">
-        <a href="https://www.spicinemas.in/">
-          <img src="img/SPI Cinemas_logo-02.png" width="120">
-        </a>
-      </div>
-
-    </nav>
   </header>
 
   <div class="calendar-home">
